@@ -59,22 +59,17 @@
 
       console.log("\n");
 
+      console.log("1 Boolean : "+Boolean(24)) //true
       console.log("1 Boolean : "+Boolean(0)) //false
       console.log("2 Boolean : "+Boolean(NaN)) //false
       console.log("3 Boolean : "+Boolean("")) //false
       console.log("4 Boolean : "+Boolean('')); //false
-      console.log("5 Boolean : "+Boolean(" ")) //true
-      console.log("6 Boolean : "+Boolean(' ')); //true
+      console.log("5 Boolean : "+Boolean(" ")) //true, 빈칸은 true
+      console.log("6 Boolean : "+Boolean(' ')); //true, 빈칸은 true 
       console.log("7 Boolean : "+Boolean( )); //false
-      console.log("8 Boolean : "+Boolean(undefined)) //false
+      console.log("8 Boolean : "+Boolean(null)) //false
+      console.log("9 Boolean : "+Boolean(undefined)) //false
       
-      console.log("\n");
-
-      let a1 = 5;
-      let a2 = "5";
-      console.log(a1 == a2); //true, == 값 비교
-      console.log(a1 === a2); //false, === 타입까지 비교
-
       let msg = "hello";
       function sayHello(name){
          if(name){

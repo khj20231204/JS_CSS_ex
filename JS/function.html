@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+
+   <script>
+      function sayHello(name){
+         console.log(name);
+
+         let msg = "Hello, ";
+
+         if(name){
+            msg += `${name}`;
+         }
+
+         console.log(msg);
+      }
+
+      sayHello();
+      sayHello("ddochi");
+
+      let msg2 = "welome";
+      
+      console.log("out:"+msg2);
+
+      let sayHello2 = function(){
+         console.log("function expression");
+      }
+      sayHello2();
+
+      let add2 = (num1, num2) => {
+         return (num1 + num2);
+      }
+
+      let add3 = (num1, num2) => {
+         console.log("aaaaaa");
+         num1 + num2;
+      }
+      console.log(add3);
+      
+      let yourname = (name) => `Hello, ${name}`
+      console.log(yourname);
+   </script>
+</head>
+<body>
+   
+</body>
+</html>
